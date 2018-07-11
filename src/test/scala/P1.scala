@@ -2,7 +2,7 @@ import org.scalatest.FlatSpec
 
 class P1 extends FlatSpec {
 
-  "P1" should "find the last element of a list" in {
+  "last(list: List[T])" should "find the last element of a list" in {
     val list = List("Hello", " ", ",", " ", "world", "!")
     assert(S99.P1.last(list) == "!")
   }

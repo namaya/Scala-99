@@ -2,7 +2,7 @@ import org.scalatest.FlatSpec
 
 class P3 extends FlatSpec {
 
-  "P3" should "find the kth element of a list." in {
+  "nth(n: Int, list: List[T])" should "find the nth element of a list." in {
     val list = List(1, 1, 2, 3, 5, 8)
     assert(S99.P3.nth(2, list) == 2)
   }

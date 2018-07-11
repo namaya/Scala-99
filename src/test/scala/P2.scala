@@ -2,7 +2,7 @@ import org.scalatest.FlatSpec
 
 class P2 extends FlatSpec {
 
-  "P2" should "find the last but one element of a list." in {
+  "penultimate(list: List[T)" should "find the last but one element of a list." in {
     val list = List(1, 2, 3, 4, 5, 6)
     assert(S99.P2.penultimate(list) == 5)
   }
