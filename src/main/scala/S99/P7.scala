@@ -9,7 +9,7 @@ object P7 {
     list.foldLeft(List[T]()) {
       (acc, element) => {
         element match {
-          case ls: List[T] => acc ++ flatten(ls) // ++ : append a list to a list
+          case ls: List[Any] => acc ++ flatten(ls.asInstanceOf[List[T]]) // ++ : append a list to a list
           case _ => acc :+ element // :+ : append an element to a list
         }
       }
